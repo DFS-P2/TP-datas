@@ -4,11 +4,11 @@ export default function handleSort(users) {
 	const flechesNom = document.querySelectorAll(".fleche");
 	flechesNom.forEach((fleche) => {
 		fleche.addEventListener("click", () => {
-			sortByNom(fleche.dataset.direction, fleche.dataset.field);
+			sortByField(fleche.dataset.direction, fleche.dataset.field);
 			displayUsers(users);
 		});
 	});
-	function sortByNom(direction, field) {
+	function sortByField(direction, field) {
 		let sortDirection;
 		if (direction == "asc") {
 			sortDirection = 1;

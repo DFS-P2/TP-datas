@@ -1,3 +1,3 @@
-const usersDatasUrl = "./datas/users.json";
+const usersDatasUrl = "../datas/users.json";
 
 export { usersDatasUrl };
