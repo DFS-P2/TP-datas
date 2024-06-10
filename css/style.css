@@ -2,7 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
+
+th > div {
+	display: flex;
+}
+
 img {
-	border: 1px solid black;
 	cursor: pointer;
+	width: 20px;
 }

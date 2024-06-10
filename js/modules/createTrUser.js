@@ -1,4 +1,4 @@
-import createTd from "./createTd.js";
+import createTd from "./lib/createTd.js";
 
 export default function createTrUser(user) {
 	const tr = document.createElement("tr");

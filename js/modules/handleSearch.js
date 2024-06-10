@@ -1,4 +1,4 @@
-import feedTbody from "./feedTbody.js";
+import displayUsers from "./displayUsers.js";
 
 export default function handleSearch(users) {
 	const searchInput = document.querySelector("#searchInput");
@@ -11,6 +11,6 @@ export default function handleSearch(users) {
 				user.email.toLowerCase().includes(searchValue) ||
 				user.role.toLowerCase().includes(searchValue)
 		);
-		feedTbody(filteredUsers);
+		displayUsers(filteredUsers);
 	});
 }
